@@ -1,35 +1,54 @@
 import React from "react";
 import "./Registraltion.scss";
 import "bootstrap/dist/css/bootstrap.css";
+import gameData from "./../../data";
 
 function Registration() {
+  const [Game, Teams] = gameData;
   return (
     <>
       <form>
         <div className="mb-3">
           <label for="exampleInputEmail1" className="form-label">
-            Email address
+            Full Name
           </label>
           <input
-            type="email"
+            type="text"
             className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
           />
-          <div id="emailHelp" className="form-text">
-            We'll never share your email with anyone else.
-          </div>
         </div>
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">
-            Password
+          <label for="exampleInputEmail1" className="form-label">
+            Team
+          </label>
+          <select name="" id="">
+            {Teams.map((item) => (
+              <option value="">{item.name}</option>
+            ))}
+          </select>
+        </div>
+
+        <div className="mb-3">
+          <label for="exampleInputEmail1" className="form-label">
+            Phone Number
           </label>
           <input
-            type="password"
+            type="text"
             className="form-control"
-            id="exampleInputPassword1"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
           />
         </div>
+
+        <div className="mb-3">
+          <label for="exampleInputEmail1" className="form-label">
+            Football
+          </label>
+          <input type="checkbox" />
+        </div>
+
         <div className="mb-3 form-check">
           <input
             type="checkbox"
