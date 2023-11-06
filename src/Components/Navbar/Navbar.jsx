@@ -22,23 +22,18 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href="#">
+              <Link
+                to="/"
+                className="nav-link active"
+                aria-current="page"
+                href="#"
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
-                Features
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="#">
-                Pricing
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link disabled" aria-disabled="true">
-                Disabled
+              <Link to="games" className="nav-link" href="#">
+                Games
               </Link>
             </li>
           </ul>
