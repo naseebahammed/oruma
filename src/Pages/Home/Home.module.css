@@ -1,0 +1,53 @@
+/* TableComponent.css */
+.custom_table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #222232; /* Background color of the table */
+    color: white; /* Text color */
+    text-align: center;
+  }
+  
+  .custom_table th, .custom-table td {
+    border: 1px solid #28283e; /* Border style and color for table cells */
+    padding: 6px;
+    text-align: center;
+  }
+  
+  .custom_table th {
+    background-color: #dec90c;
+    color: #262639; /* Background color of header cells */
+  }
+
+  .custom_table td{
+    padding: 6px;
+    border: 1px solid #28283e;
+  }
+  
+  
+  .custom_table tr:nth-child(even) {
+    background-color: #262639; /* Alternate row background color */
+  }
+
+  .custom_table tr:last-child{
+        border-radius:  0 0 10px 10px;
+  }
+  
+  .custom_table tr:hover {
+    background-color: #555; /* Background color on hover */
+  }
+  
+  .lt_title_head{
+        background-color: #262646;
+        border-radius: 10px 10px 0 0;
+        color: #fff;
+        height: 50px;
+        display: flex;
+        align-items: center;
+  }
+
+  .lt_title_head h5{
+        margin-bottom: 0px;
+        padding-left: 14px;
+        font-size: 18px;
+        font-weight: 500;
+  }

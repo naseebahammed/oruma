@@ -1,13 +1,14 @@
 import React from "react";
-import "./Registraltion.scss";
+// import "./Registraltion.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import gameData from "./../../data";
+import styles from "./Registration.module.css";
 
 function Registration() {
   const [Game, Teams] = gameData;
   return (
     <>
-      <form>
+      <form className={styles.reg_form}>
         <div className="mb-3">
           <label for="exampleInputEmail1" className="form-label">
             Full Name
@@ -19,11 +20,11 @@ function Registration() {
             aria-describedby="emailHelp"
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-3 d-flex flex-column">
           <label for="exampleInputEmail1" className="form-label">
             Team
           </label>
-          <select name="" id="">
+          <select name="" id="" className={styles.lt_form_select}>
             {Teams.map((item) => (
               <option value="">{item.name}</option>
             ))}
@@ -42,20 +43,20 @@ function Registration() {
           />
         </div>
 
-        <div className="mb-3">
-          <label for="exampleInputEmail1" className="form-label">
+        <div className="mb-3 d-flex align-items-center">
+          <label for="exampleInputEmail1" className="form-label me-2 m-0">
             Football
           </label>
-          <input type="checkbox" />
+          <input type="checkbox" className={styles.checkinput_box} />
         </div>
 
-        <div className="mb-3 form-check">
+        <div className="mb-3 ms-0 ps-0 form-check">
           <input
             type="checkbox"
-            className="form-check-input"
+            className={styles.checkinput_box}
             id="exampleCheck1"
           />
-          <label className="form-check-label" for="exampleCheck1">
+          <label className="form-check-label ms-2" for="exampleCheck1">
             Check me out
           </label>
         </div>
