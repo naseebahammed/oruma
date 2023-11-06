@@ -10,7 +10,7 @@
   .custom_table th, .custom-table td {
     border: 1px solid #28283e; /* Border style and color for table cells */
     padding: 6px;
-    text-align: center;
+    /* text-align: center; */
   }
   
   .custom_table th {
