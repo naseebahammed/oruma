@@ -4,7 +4,7 @@ import gameData from "./../../data";
 import { Link } from "react-router-dom";
 
 function Game() {
-  const [Game, Teams] = gameData;
+  const [Game] = gameData;
 
   return (
     <div className="container-fluid">

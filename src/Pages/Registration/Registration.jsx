@@ -14,7 +14,7 @@ function Registration() {
   const [formData, setFormData] = useState({
     fName: "",
     phnNumber: "",
-    team: "",
+    team: "alkhor",
     games: [],
   });
 
@@ -115,12 +115,13 @@ function Registration() {
             className="form-select form-select-md mb-3"
             name="team"
             id="team"
+            value={formData.team}
             required
             onChange={(e) => handle(e)}
           >
             {Teams &&
               Teams.map((item) => (
-                <option value={item.value} key={item.id}>
+                <option value={item.value} name={item.value} key={item.id}>
                   {item.name}
                 </option>
               ))}
