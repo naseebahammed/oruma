@@ -9,7 +9,7 @@ function GamesOverview() {
 
   const url = "http://localhost:4000/api/games";
 
-  const gameItem = Game.find((item) => item.id == id);
+  const gameItem = Game.find((item) => item.id === id);
 
   console.log(gameItem);
 

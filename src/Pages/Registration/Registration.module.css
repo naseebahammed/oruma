@@ -1,0 +1,42 @@
+.main_bg{
+    background-color: #181829;
+}
+
+.reg_form{
+    padding: 30px 0;
+}
+
+.reg_form label{
+   color: #65656B;
+   font-size: 16px;
+   font-weight: 500;
+
+}
+
+.reg_form button{
+    background-color: #DEC90C;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+}
+
+.reg_form input{
+    background-color: #222232;
+    border: none;
+    height: 45px;
+    border-radius: 12px;
+}
+
+.lt_form_select{
+    background-color: #222232;
+    border: none;
+    height: 45px;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.reg_form .checkinput_box{
+    height: auto !important;
+}

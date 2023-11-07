@@ -1,0 +1,14 @@
+.topnavbar{
+    background: #DEC90C;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.topnavbar p{
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 16px;
+}

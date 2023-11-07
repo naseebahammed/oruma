@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import "./Registraltion.scss";
+import React, { useState } from "react";
+// import "./Registraltion.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import gameData from "./../../data";
+import styles from "./Registration.module.css";
 import axios from "axios";
 
 // import { projectFirestore } from "../../firebase/config";
@@ -77,7 +78,7 @@ function Registration() {
 
   return (
     <>
-      <form onSubmit={submit}>
+      <form className={styles.reg_form} onSubmit={submit}>
         <div className="mb-3">
           <label htmlFor="fName" className="form-label">
             Full Name
@@ -90,6 +91,16 @@ function Registration() {
             required
             onChange={(e) => handle(e)}
           />
+        </div>
+        <div className="mb-3 d-flex flex-column">
+          <label for="exampleInputEmail1" className="form-label">
+            Team
+          </label>
+          <select name="" id="" className={styles.lt_form_select}>
+            {Teams.map((item) => (
+              <option value="">{item.name}</option>
+            ))}
+          </select>
         </div>
 
         <div className="mb-3">
@@ -106,8 +117,8 @@ function Registration() {
           />
         </div>
 
-        <div className="mb-3">
-          <label htmlFor="team" className="form-label">
+        <div className="mb-3 d-flex align-items-center">
+          <label htmlFor="team" className="form-label me-2 m-0">
             Team
           </label>
           <br />
