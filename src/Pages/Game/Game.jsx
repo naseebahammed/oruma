@@ -8,11 +8,11 @@ function Game() {
 
   return (
     <div className="container-fluid">
-      <h2 className="h2">Games</h2>
+      <h2 className="h2 text-light">Games</h2>
       <ul className="games-list">
         {Game.map((item) => (
           <Link to={`/games/${item.id}`} key={item.id}>
-            <li>{item.name}</li>
+            <li className="text-light "> {item.name}</li>
           </Link>
         ))}
       </ul>

@@ -1,0 +1,15 @@
+[
+  { "name": "Basketball", "value": "basketball" },
+  { "name": "Lemon spoon", "value": "lemon&spoon" },
+  { "name": "Football", "value": "football" },
+  { "name": "Kamba", "value": "kamba" },
+  { "name": "Tavala Chaatm", "value": "tavala" },
+  { "name": "Musical Ball Pass", "value": "ballPass" },
+  { "name": "Musical chair", "value": "musicalChair" },
+  { "name": "Cricket Stumb", "value": "cricketStumb" },
+  { "name": "Water Bottle Filling", "value": "waterFilling" },
+  { "name": "Penalty shoot", "value": "penalty" },
+  { "name": "Kulam Kara", "value": "kulamKara" },
+  { "name": "Coin Filling", "value": "coinFilling" },
+  { "name": "Ball blowing", "value": "ballBlowing" }
+]
